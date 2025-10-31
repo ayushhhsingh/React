@@ -1,5 +1,13 @@
+import Chai from "./Chai.jsx";
+
 function App() {
-  return <h1>hello world</h1>;
+  return (
+    <>
+      <Chai />
+      <h1>wrapped everything under fragment</h1>
+      <h1>used fragmentation </h1>
+    </>
+  );
 }
 
 export default App;
