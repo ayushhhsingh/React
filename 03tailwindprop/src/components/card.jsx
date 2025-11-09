@@ -19,7 +19,7 @@ function card(props) {
         </blockquote>
         <h2 className="text-2xl font-medium p-4 px-10">{props.username}</h2>
 
-        <h2>📍 MERN Stack Learner & Frontend Developer</h2>
+        <h2>📍 MERN Stack Learner & Full stack Developer</h2>
       </div>
     </div>
   );
