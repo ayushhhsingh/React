@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-
+import Card from "./components/card.jsx";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -8,11 +8,10 @@ function App() {
     <>
       <link href="/src/style.css" rel="stylesheet"></link>
 
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
-      <h1 className="bg-slate-900 text-2xl text-amber-500">
-        {" "}
-        Tailwind and vite
+      <h1 className="bg-green-700 text-2xl rounded-md text-white p-4">
+        Learn Vite with Tailwind
       </h1>
+      <Card username="Ayush Singh" />
     </>
   );
 }
