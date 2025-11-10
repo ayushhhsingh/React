@@ -25,7 +25,7 @@ react-learning-journey/
 ├── project-02-counter-app/
 ├── project-03-tailwindprop/
 ├── project-04-/bg_changer/
-├── project-05-/
+├── project-05-/password_generator
 ├── project-06-/
 ├── project-07-/
 ├── project-08-
