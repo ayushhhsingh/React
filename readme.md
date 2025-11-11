@@ -45,6 +45,8 @@ npm install
 # Start the development server
 npm run dev
 
+//sometime css class will clash with tailwind
+
 📚 Resources I’m Using
 
 React Official Docs
