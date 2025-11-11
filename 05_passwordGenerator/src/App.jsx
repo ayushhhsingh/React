@@ -1,5 +1,4 @@
 import { useState, useCallback, useEffect, useRef } from "react";
-import "./App.css";
 
 function App() {
   const [length, setLength] = useState(8);
@@ -124,5 +123,7 @@ function App() {
     </div>
   );
 }
+// tailwind not being applied
+// Solution: Ensure Tailwind CSS is properly set up and imported in the project.
 
 export default App;
