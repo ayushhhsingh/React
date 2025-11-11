@@ -1,8 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from "react";
-// Removed unused logo imports
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
-// import "./App.css"; // This line caused the error and is not needed for Tailwind.
+import "./App.css";
 
 function App() {
   const [length, setLength] = useState(8);
