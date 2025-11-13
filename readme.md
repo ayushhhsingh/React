@@ -26,7 +26,7 @@ react-learning-journey/
 ├── project-03-tailwindprop/
 ├── project-04-/bg_changer/
 ├── project-05-/password_generator
-├── project-06-/
+├── project-06-/Currency
 ├── project-07-/
 ├── project-08-
 ├── project-09-/
