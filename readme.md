@@ -34,7 +34,7 @@ react-learning-journey/
 │
 └── README.md
 # Clone the repository
-git clone https://github.com/yourusername/react-learning-journey.git
+git clone https://github.com/ayushhhsingh/React.git
 
 # Navigate into a project
 cd project-02-counter-app
