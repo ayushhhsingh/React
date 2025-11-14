@@ -1,6 +1,6 @@
 import React, { useId } from "react";
 
-function inputBox(
+function InputBox(
   amount,
   label,
   onAmountChange,
@@ -48,4 +48,4 @@ function inputBox(
   );
 }
 
-export default inputBox;
+export default InputBox;
