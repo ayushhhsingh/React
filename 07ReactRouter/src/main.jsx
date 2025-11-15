@@ -11,7 +11,12 @@ import {
 } from "react-router-dom";
 
 const router = createBrowserRouter(
-  createRoutesFromElements(<Route path="/" element={<Layout />} />)
+  createRoutesFromElements(
+    <Route path="/" element={<Layout />}>
+      <Route index element={<div>home</div>} />
+      <Route path="about" element={<div>about</div>} />
+    </Route>
+  )
 );
 
 createRoot(document.getElementById("root")).render(
