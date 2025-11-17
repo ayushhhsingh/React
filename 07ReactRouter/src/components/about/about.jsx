@@ -8,7 +8,7 @@ export default function About() {
         <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
           <div className="md:5/12 lg:w-5/12">
             <img
-              src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png"
+              src="https://cdn.dribbble.com/userupload/23687493/file/original-28afb0bf35f3cefbc17347b2b05475ad.gif"
               alt="image"
             />
           </div>
@@ -17,15 +17,16 @@ export default function About() {
               React development is carried out by passionate developers
             </h2>
             <p className="mt-6 text-gray-600">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-              omnis voluptatem accusantium nemo perspiciatis delectus atque
-              autem! Voluptatum tenetur beatae unde aperiam, repellat expedita
-              consequatur! Officiis id consequatur atque doloremque!
+              Hi, I’m a passionate Full Stack Developer who loves turning ideas
+              into clean, efficient, and scalable applications. I enjoy working
+              across the entire development stack—from crafting responsive,
+              user-friendly frontends to building powerful backend systems and
+              APIs.
             </p>
             <p className="mt-4 text-gray-600">
-              Nobis minus voluptatibus pariatur dignissimos libero quaerat iure
-              expedita at? Asperiores nemo possimus nesciunt dicta veniam
-              aspernatur quam mollitia.
+              When I’m not coding, I’m usually debugging my life choices,
+              Googling error messages, or starting new side-projects that I may
+              or may not finish. But hey — that’s the developer life.
             </p>
           </div>
         </div>
