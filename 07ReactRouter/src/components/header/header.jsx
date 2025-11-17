@@ -8,10 +8,11 @@ export default function Header() {
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link to="/" className="flex items-center">
             <img
-              src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-              className="mr-3 h-12"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4AnJlOc74bP6eAqu4KyfTKcLJ0Bs6QqBOWQ&s"
+              className="mr-3 h-25 w-30"
               alt="Logo"
             />
+            <span className="text-xl italic font-semibold">NoRush</span>
           </Link>
           <div className="flex items-center lg:order-2">
             <Link
