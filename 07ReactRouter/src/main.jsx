@@ -9,6 +9,9 @@ import {
 } from "react-router-dom";
 import Home from "./components/home/home.jsx";
 import About from "./components/about/about.jsx";
+import App from "./App.jsx";
+import "./index.css";
+
 // import User from "./components/User/User.jsx";
 // import Github, { githubInfoLoader } from "./components/Github/Github.jsx";
 
@@ -21,7 +24,5 @@ const router = createBrowserRouter(
   )
 );
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
+  <StrictMode>{<RouterProvider router={router} />}</StrictMode>
 );
