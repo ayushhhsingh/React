@@ -18,7 +18,6 @@ Performance optimization
 
 Deployment (Netlify / Vercel / Render)
 
-
 react-learning-journey/
 │
 ├── project-01-hello-react/
@@ -27,22 +26,27 @@ react-learning-journey/
 ├── project-04-/bg_changer/
 ├── project-05-/password_generator
 ├── project-06-/Currency_Converter
-├── project-07-/
+├── project-07-/RoutingProject
 ├── project-08-
 ├── project-09-/
 ├── project-10-/
 │
 └── README.md
+
 # Clone the repository
+
 git clone https://github.com/ayushhhsingh/React.git
 
 # Navigate into a project
+
 cd project-02-counter-app
 
 # Install dependencies
+
 npm install
 
 # Start the development server
+
 npm run dev
 
 //sometime css class will clash with tailwind
@@ -56,7 +60,6 @@ freeCodeCamp React Tutorials
 Traversy Media YouTube
 
 Frontend Mentor Challenges
-
 
 👨‍💻 Author
 
