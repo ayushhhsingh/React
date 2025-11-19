@@ -27,7 +27,7 @@ react-learning-journey/
 ├── project-05-/password_generator
 ├── project-06-/Currency_Converter
 ├── project-07-/RoutingProject
-├── project-08-
+├── project-08-/ContextApi
 ├── project-09-/
 ├── project-10-/
 │
@@ -49,8 +49,6 @@ npm install
 
 npm run dev
 
-//sometime css class will clash with tailwind
-
 📚 Resources I’m Using
 
 React Official Docs
@@ -64,4 +62,4 @@ Frontend Mentor Challenges
 👨‍💻 Author
 
 Ayush Singh
-📍 MERN Stack Learner & Frontend Developer
+📍 MERN Stack Learner & Full Stack Developer
