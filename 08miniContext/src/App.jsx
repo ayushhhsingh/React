@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Login from "./components/Login";
 import Profile from "./components/profile";
+import UserContextProvider from "./context/contextProvider";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,6 +14,7 @@ function App() {
       <h2>Context Api </h2>
       <Login />
       <Profile />
+      <UserContextProvider />
     </>
   );
 }
