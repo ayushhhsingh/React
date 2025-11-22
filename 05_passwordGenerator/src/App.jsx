@@ -59,7 +59,7 @@ function App() {
         <button
           onClick={copyPasswordToClipboard}
           // Theme Change & Hover Effect: Changed hover to a lighter gray (more "silver")
-          className="outline-none bg-gray-600 text-white px-3 py-0.5 shrink-0 hover:bg-gray-900 transition-colors duration-200"
+          className="outline-none bg-gray-900 text-white px-3 py-0.5 shrink-0 hover:bg-gray-900 transition-colors duration-200"
         >
           copy
         </button>
