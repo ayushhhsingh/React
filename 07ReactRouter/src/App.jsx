@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <h1 className="bg-gray-500 flex items-center font-extrabold justify-center text-4xl h-20">
+      <h1 className="bg-gray-500 flex items-center font-extrabold justify-center text-4xl h-20 text-amber-200">
         React router
       </h1>
     </>
