@@ -4,11 +4,11 @@ import { TodoProvider } from "./contexts";
 import { TodoForm, TodoItem } from "./components";
 import ThemeBtn from "./components/Darkmode";
 import { useTheme } from "./components/theme";
+import Sidebar from "./components/Nav.jsx";
 
 function App() {
   const [todos, setTodos] = useState([]);
 
-  // Get theme mode from ThemeProvider
   const { themeMode } = useTheme();
 
   const addTodo = (todo) => {
@@ -48,32 +48,33 @@ function App() {
     <TodoProvider
       value={{ todos, addTodo, updateTodo, deleteTodo, toggleComplete }}
     >
-      <div
-        className={
-          themeMode === "dark"
-            ? "bg-slate-900 text-white min-h-screen"
-            : "bg-white text-black min-h-screen"
-        }
-      >
-        <ThemeBtn />
+      <div className="flex min-h-screen">
+        {/* Sidebar */}
+        <Sidebar />
 
-        <div className="min-h-screen py-8 px-12">
-          <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3">
-            <h1 className="text-2xl font-bold text-center mb-8 mt-2">
-              Manage Your Todos
-            </h1>
+        {/* Main Content */}
+        <div
+          className={`flex-1 min-h-screen p-6 ${
+            themeMode === "dark"
+              ? "bg-slate-900 text-white"
+              : "bg-[#f5f5dc] text-black"
+          }`}
+        >
+          {/* TOP RIGHT THEME BUTTON */}
+          <div className="flex justify-end mb-4">
+            <ThemeBtn />
+          </div>
 
-            <div className="mb-4">
-              <TodoForm />
-            </div>
+          <h1 className="text-3xl font-bold text-center mb-6">
+            Manage Your Todos
+          </h1>
 
-            <div className="flex flex-wrap gap-y-3">
-              {todos.map((todo) => (
-                <div key={todo.id} className="w-full">
-                  <TodoItem todo={todo} />
-                </div>
-              ))}
-            </div>
+          <TodoForm />
+
+          <div className="mt-4 space-y-3">
+            {todos.map((todo) => (
+              <TodoItem key={todo.id} todo={todo} />
+            ))}
           </div>
         </div>
       </div>
