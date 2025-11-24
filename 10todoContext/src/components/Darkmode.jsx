@@ -22,14 +22,14 @@ function ThemeBtn() {
         checked={themeMode === "dark"}
       />
       <div
-        className="w-11 h-6 bg-gray-200 peer-focus:ring-4 peer-focus:ring-blue-300
+        className="w-11 h-6 bg-gray-400 peer-focus:ring-4 peer-focus:ring-blue-300
         dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
         peer-checked:after:translate-x-full after:absolute 
          after:bg-white after:rounded-full after:h-5 after:w-5
         after:transition-all peer-checked:bg-blue-600"
       ></div>
       <span className="ml-3 text-sm font-medium text-gray-900 dark:text-white">
-        Toggle Theme
+        change Theme
       </span>
     </label>
   );
