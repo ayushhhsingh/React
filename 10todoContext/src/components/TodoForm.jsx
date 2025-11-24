@@ -7,7 +7,7 @@ function TodoForm() {
 
   const add = (e) => {
     e.preventDefault();
-    if (!todo) return;
+    if (!todo) return; // prevent empty
     addTodo({ todo, completed: false });
     setTodo("");
   };
@@ -16,23 +16,23 @@ function TodoForm() {
     <form onSubmit={add} className="flex">
       <input
         type="text"
-        placeholder="Write Todo..."
+        placeholder="Write Todo"
         className="
-          w-full 
-          border border-black/10 
-          dark:border-white/20
-          rounded-l-lg 
-          px-3 
-          outline-none 
-          duration-150 
-          bg-white/20 
-          dark:bg-white/10
-          text-black 
-          dark:text-white
-          placeholder-black/50
-          dark:placeholder-white/50
-          py-1.5
-        "
+        w-full
+        
+        border border-black/10 
+        dark:border-white/20
+        rounded-l-lg 
+        px-30
+        outline-none 
+        duration-150 
+
+          focus:ring-2  
+          dark:focus:ring-blue-500
+          focus:ring-blue-300
+
+        py-1.5
+      "
         value={todo}
         onChange={(e) => setTodo(e.target.value)}
       />
