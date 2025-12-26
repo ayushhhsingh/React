@@ -29,7 +29,7 @@ function ThemeBtn() {
         after:transition-all peer-checked:bg-blue-600"
       ></div>
       <span className="ml-3 text-sm font-medium text-gray-900 dark:text-white">
-        change Theme
+        Dark Mode
       </span>
     </label>
   );
