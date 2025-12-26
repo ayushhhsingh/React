@@ -2,14 +2,25 @@ import conf from "../conf/conf";
 import { Client, Databases, Storage, Query, ID } from "appwrite";
 
 export class Service {
-  client = new Client();
+  client;
   databases;
   bucket;
 
   constructor() {
-    this.client
+    if (
+      !conf.appwriteUrl ||
+      !conf.appwriteProjectId ||
+      !conf.appwriteDatabaseId ||
+      !conf.appwriteCollectionId ||
+      !conf.appwriteBucketId
+    ) {
+      throw new Error("❌ Appwrite configuration missing. Check .env file");
+    }
+
+    this.client = new Client()
       .setEndpoint(conf.appwriteUrl)
       .setProject(conf.appwriteProjectId);
+
     this.databases = new Databases(this.client);
     this.bucket = new Storage(this.client);
   }
@@ -22,8 +33,8 @@ export class Service {
         slug
       );
     } catch (error) {
-      console.log("Appwrite service :: getPost() :: ", error);
-      return false;
+      console.error("Appwrite :: getPost :: ", error);
+      return null;
     }
   }
 
@@ -35,8 +46,8 @@ export class Service {
         queries
       );
     } catch (error) {
-      console.log("Appwrite service :: getPosts() :: ", error);
-      return false;
+      console.error("Appwrite :: getPosts :: ", error);
+      return null;
     }
   }
 
@@ -55,8 +66,8 @@ export class Service {
         }
       );
     } catch (error) {
-      console.log("Appwrite service :: createPost() :: ", error);
-      return false;
+      console.error("Appwrite :: createPost :: ", error);
+      return null;
     }
   }
 
@@ -74,8 +85,8 @@ export class Service {
         }
       );
     } catch (error) {
-      console.log("Appwrite service :: updateDocument() :: ", error);
-      return false;
+      console.error("Appwrite :: updatePost :: ", error);
+      return null;
     }
   }
 
@@ -88,12 +99,12 @@ export class Service {
       );
       return true;
     } catch (error) {
-      console.log("Appwrite service :: deleteDocument() :: ", error);
+      console.error("Appwrite :: deletePost :: ", error);
       return false;
     }
   }
 
-  // storage service
+  // Storage services
 
   async uploadFile(file) {
     try {
@@ -103,22 +114,26 @@ export class Service {
         file
       );
     } catch (error) {
-      console.log("Appwrite service :: uploadFile() :: ", error);
-      return false;
+      console.error("Appwrite :: uploadFile :: ", error);
+      return null;
     }
   }
 
   async deleteFile(fileId) {
     try {
-      return await this.bucket.deleteFile(conf.appwriteBucketId, fileId);
+      await this.bucket.deleteFile(conf.appwriteBucketId, fileId);
+      return true;
     } catch (error) {
-      console.log("Appwrite service :: deleteFile() :: ", error);
+      console.error("Appwrite :: deleteFile :: ", error);
       return false;
     }
   }
 
   getFilePreview(fileId) {
-    return this.bucket.getFilePreview(conf.appwriteBucketId, fileId).href;
+    return this.bucket.getFilePreview(
+      conf.appwriteBucketId,
+      fileId
+    ).href;
   }
 }
 
