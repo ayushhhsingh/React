@@ -29,7 +29,7 @@ react-learning-journey/
 ├── project-07-/RoutingProject
 ├── project-08-/ContextApi
 ├── project-09-/ThemeChanger
-├── project-10-/
+├── project-10-/blog application
 │
 └── README.md
 
